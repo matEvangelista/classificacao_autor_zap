@@ -1,6 +1,6 @@
-# Classificador de Autores com BERT
+# Classificador de Autores com BERTimbau
 
-Este projeto utiliza um modelo BERT fine-tunado para classificar mensagens entre 5 autores distintos, a partir do conteúdo textual.
+Este projeto utiliza um modelo BERT ([BERTimbau Base](https://huggingface.co/neuralmind/bert-base-portuguese-cased)) ajustado (fine-tuned) para classificar mensagens entre 5 autores distintos, a partir do conteúdo textual.
 
 ## 📊 Relatório de Desempenho
 
@@ -19,16 +19,17 @@ Este projeto utiliza um modelo BERT fine-tunado para classificar mensagens entre
 
 ### 🎯 Matriz de Confusão
 
-> ![Matriz de Confusão](images/matriz_confusao.png)
+> ![Matriz de Confusão](images/matriz.png)
 
 ### 🔎 Dispersão dos Embeddings `[CLS]` (t-SNE)
 
-> ![Gráfico de Dispersão](images/tsne_cls.png)
+> ![Gráfico de Dispersão](images/scatter.png)
 
 ## 🛠️ Tecnologias
 
 - Python
 - PyTorch
 - Transformers (Hugging Face)
+- [chat-miner](https://github.com/joweich/chat-miner)
 - Scikit-learn
 - Matplotlib / Seaborn
